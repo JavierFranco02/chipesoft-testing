@@ -1,9 +1,30 @@
 title: "ChipeSoft — Trabajo Práctico Integrador"
 description: "Análisis y diseño de ChipeSoft, desarrollado para la dueña de Chiperia la Caraguateña."
-theme: jekyll-theme-cayman
+lang: es
 
-# Este archivo le indica a GitHub Pages qué tema usar para que el sitio
-# se vea prolijo automáticamente, sin necesidad de escribir HTML/CSS.
-# El grupo puede cambiar "theme" por otro tema soportado por GitHub Pages
-# (por ejemplo: jekyll-theme-minimal, jekyll-theme-slate, jekyll-theme-architect)
-# si prefiere otro estilo visual.
+# Tema (reemplaza a jekyll-theme-cayman)
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links          # convierte enlaces a .md en enlaces que funcionan
+  - jekyll-optional-front-matter   # procesa los .md aunque no tengan el bloque ---
+
+relative_links:
+  enabled: true
+  collections: false
+
+# Apariencia y funciones
+color_scheme: light        # cambiar a "dark" si prefieren modo oscuro
+search_enabled: true       # buscador en el menú lateral
+heading_anchors: true
+
+# Enlace al repositorio arriba a la derecha
+aux_links:
+  "Repositorio en GitHub":
+    - "https://github.com/JavierFranco02/Ingenieria_de_software_I"
+
+# Archivos que no deben aparecer como páginas del sitio
+exclude:
+  - README.md
+  - CONTRIBUTING.md
