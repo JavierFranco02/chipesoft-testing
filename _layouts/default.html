@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">🥖 ChipeSoft</a>
+      <nav>
+        <a href="{{ '/trabajo-practico/docs/conceptualizacion.html' | relative_url }}">Conceptualización</a>
+        <a href="{{ '/trabajo-practico/docs/analisis.html' | relative_url }}">Análisis</a>
+        <a href="{{ '/trabajo-practico/docs/diseno.html' | relative_url }}">Diseño</a>
+        <a href="https://github.com/JavierFranco02/Ingenieria_de_software_I">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      Ingeniería de Software I · 4.º B T.M. · ChipeSoft
+    </div>
+  </footer>
+
+</body>
+</html>
